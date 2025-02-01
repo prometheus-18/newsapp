@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
 
 export class NewsItem extends Component {
+   
     render() {
-        let { title, description } = this.props
+        let { title, description,imgUrl,newsUrl,author,date,source } = this.props
         return (
-            <div>
-                <div className="card" style={{ width: '18rem' }}>
-                    <img className="card-img-top" src="https://s.yimg.com/ny/api/res/1.2/Vk6XoySWfWcZVq0m5kxiOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-01/d432f180-da97-11ef-bdfc-0e7c78d9a2d6" alt="Card image cap" />
+            <div className='my-3'>
+                <div className="card">
+                <span className="position-absolute top-0 end-0 badge square-pill bg-danger"
+                          style={{ zIndex: '1', fontSize: '0.8rem', padding: '7px 12px' }}>
+                        {source}
+                    </span>
+                    <img className="card-img-top" src={!imgUrl?"https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png":imgUrl} alt="Card image cap" />
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>
                         <p className="card-text">{description}</p>
-                        <a href="/" className="btn btn-primary">Go somewhere</a>
+                        <p className="card-text"><small className="text-muted">By {author} on {new Date(date).toUTCString()}</small></p>
+                        <a rel='noreferrer' href={newsUrl} target='_blank' className="btn btn-sm btn-dark">Read More</a>
                     </div>
                 </div>
             </div>

@@ -4,29 +4,16 @@
     "articles": [
         {
             "source": {
-                "id": "the-wall-street-journal",
-                "name": "The Wall Street Journal"
+                "id": null,
+                "name": "Yahoo Entertainment"
             },
-            "author": "The Wall Street Journal",
-            "title": "Hamas Will Release Three More Hostages Thursday Under Gaza Cease-Fire Deal - The Wall Street Journal",
-            "description": null,
-            "url": "https://www.wsj.com/world/middle-east/hamas-will-release-three-more-hostages-thursday-under-gaza-cease-fire-deal-27d59b4e",
-            "urlToImage": null,
-            "publishedAt": "2025-01-29T17:38:00Z",
-            "content": null
-        },
-        {
-            "source": {
-                "id": "abc-news",
-                "name": "ABC News"
-            },
-            "author": "ABC News",
-            "title": "F-35 crashes at Eielson Air Force Base in Alaska as pilot ejects safely - ABC News",
-            "description": null,
-            "url": "https://abcnews.go.com/US/35-crashes-eielson-air-force-base-alaska-pilot/story?id\\\\u003d118207654",
-            "urlToImage": null,
-            "publishedAt": "2025-01-29T16:57:08Z",
-            "content": null
+            "author": "Danica Creahan",
+            "title": "When is the Super Bowl in 2025? TV channel, location, kickoff time, how to watch, and everything you need to know - Yahoo Sports",
+            "description": "Are you ready for Super Bowl LIX?",
+            "url": "https://sports.yahoo.com/when-is-the-super-bowl-in-2025-tv-channel-location-kickoff-time-how-to-watch-and-everything-you-need-to-know-222936989.html",
+            "urlToImage": "https://s.yimg.com/ny/api/res/1.2/Vk6XoySWfWcZVq0m5kxiOw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2025-01/d432f180-da97-11ef-bdfc-0e7c78d9a2d6",
+            "publishedAt": "2025-01-29T16:42:39Z",
+            "content": "Super Bowl 59 will be held at Caesars Superdome in New Orleans, Louisiana this February. (Aaron M. Sprecher/Getty Images)\r\nSuper Bowl LIX is just around the corner, and the teams are finally set: the… [+3386 chars]"
         },
         {
             "source": {
