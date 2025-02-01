@@ -24,7 +24,7 @@ export class News extends Component {
             page: 1
         }
     }
-    async updateNews(page){
+    async updateNews(page) {
         const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=3ef369e6c7c3489baf0baadfd171610e&page=${this.state.page}&pageSize=${this.props.pageSize}`;
         this.setState({ loading: true })
         let data = await fetch(url);
@@ -37,7 +37,7 @@ export class News extends Component {
         })
     }
     async componentDidMount() {
-        this.updateNews(this.state.page);   
+        this.updateNews(this.state.page);
     }
 
     handlePrevClick = async () => {
@@ -61,7 +61,7 @@ export class News extends Component {
                 <div className='row my-4'>
                     {!this.state.loading && this.state.articles.map((element) => {
                         return <div className='col-md-4' key={element["url"]}>
-                            <NewsItem title={element.title ? element.title : " "} description={element.description ? element.description : " "} imgUrl={element.urlToImage} newsUrl={element.url} author={element.author?element.author:"Unkown"} date={element.publishedAt} source={element.source.name}/>
+                            <NewsItem title={element.title ? element.title : " "} description={element.description ? element.description : " "} imgUrl={element.urlToImage} newsUrl={element.url} author={element.author ? element.author : "Unkown"} date={element.publishedAt} source={element.source.name} />
                         </div>
                     })}
 
