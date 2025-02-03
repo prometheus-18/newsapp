@@ -39,7 +39,7 @@ const News = ({ country, pageSize, category, apiKey, setProgress }) => {
     useEffect(() => {
         updateNews();
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [country, category]); // Re-fetch news when country or category changes
+    }, [country, category]); 
 
     const fetchMoreData = async () => {
         try {
